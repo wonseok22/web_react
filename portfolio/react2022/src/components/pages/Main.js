@@ -1,12 +1,18 @@
 import React from "react";
+import Header from "../includes/Header";
+import Contents from "../includes/Contents";
+import Footer from "../includes/Footer";
+import MainCont from "../includes/MainCont";
 
 function Main(){
     return (
-        <div id="wrap">
-            <section id="main">
-                <div className="main__cont"></div>
-            </section>
-        </div>
+        <>
+            <Header />
+            <Contents>
+                <MainCont />
+            </Contents>
+            <Footer/>
+        </>
     )
 }
 

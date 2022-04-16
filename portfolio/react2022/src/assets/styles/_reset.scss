@@ -1,4 +1,18 @@
 @charset "UTF-8";
+
+//변수 설정
+:root {
+  --white : #fff;
+  --black : #000;
+  --dark_bg : #000;
+  --dark_border : #2e2e30;
+  --light_bg : #f0eeeb;
+  --light_border : #dad8d1;
+  
+  
+  --main_font : "Saol"; 
+}
+
 /* border-box 초기화 */
 *,
 *:before,
@@ -82,7 +96,7 @@ h5,
 h6 {
   font-weight: normal;
 }
-ul {
+ul,li {
   list-style: none;
 }
 em,

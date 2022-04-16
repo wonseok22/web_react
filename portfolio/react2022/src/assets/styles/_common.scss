@@ -1,0 +1,26 @@
+// container
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 96%;
+}
+
+// layout
+#main {
+    background: var(--black);
+
+}
+
+// cont_title
+.cont__title {
+    padding: 15vmax 0;
+    font-size: 5vmax;
+    font-family: var(--main_font);
+    text-transform: uppercase;
+    line-height: 0.85;
+    color: var(--white);
+    em {
+        display: block;
+    }
+}
