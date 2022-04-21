@@ -1,24 +1,24 @@
 import React from "react";
-import {Link,BrowserRouter} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 function Header(props){
     return(
         <header id="header" className={props.color}>
             <div className="header__port">
-                <Link to="/portfolio">portfolio</Link>
+                <Link to="/portfolio">portfoilo</Link>
             </div>
             <div className="header__logo">
-            <Link to="/">Han Won-Seok</Link>
+                <Link to="/">webstroyboy</Link>
             </div>
-            <div className="header__menu">
-                <u>
+            <nav className="header__menu">
+                <ul>
                     <li><Link to="/about">About</Link></li>
-                    <li><Link to="/reference">Reference</Link></li>
+                    <li><Link to="/reference">Refer</Link></li>
                     <li><Link to="/youtube">Youtube</Link></li>
                     <li><Link to="/script">Script</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
-                </u>
-            </div>
+                </ul>
+            </nav>
         </header>
     )
 }

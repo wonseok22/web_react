@@ -5,18 +5,18 @@ function MainInfo({text}){
 }
 
 const mainText = [
-    {text : "WE PROVIDE"},
-    {text : "VISUAL CODING"},
-    {text : "SOLUTIONS"},
-    {text : "FOR YOU WEBS"},
+    {text : "We Provide"},
+    {text : "Visual coding"},
+    {text : "Solutions"},
+    {text : "for you webs"},
 ]
 
-function MainCont(props){
+function MainCont(){
     return (
         <section className="main__cont">
             <div className="main__inner">
                 {mainText.map(txt => (
-                    <MainInfo text={txt.text} key={txt.text}/>
+                    <MainInfo text={txt.text} key={txt.text} />
                 ))}
             </div>
         </section>
