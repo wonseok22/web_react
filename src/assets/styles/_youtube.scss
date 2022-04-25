@@ -1,7 +1,18 @@
 .youtube__cont {
     background-color: var(--black);
 }
-
-.youtube__inner {
-
+.youtube__list {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            flex: 1 1 23%;
+            margin: 1%;
+            p {
+                color: var(--white);
+                font-family: var(--subKor_font);
+                padding-top: 7px;
+            }
+        }
+    }
 }

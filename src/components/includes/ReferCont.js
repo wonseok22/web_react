@@ -1,54 +1,28 @@
-import React from 'react'
+import React from 'react';
+import propType from "prop-types";
+import { Link } from "react-router-dom";
 
-function referCont(props) {
+function ReferCont({id, title, desc, use, desc2, element, tag, version, view, image, link, Definition, Accessibility, Related, mdn, w3c}) {
   return (
-    <section className={`refer__cont ${props.color}`}>
-      <div className="container">
-        <div className="refer__inner">
-          <h2>CSS</h2>
-          <table>
-            <colgroup>
-              <col style={{width: "10%"}} />
-              <col style={{width: "20%"}} />
-              <col style={{width: "70%"}} />
-            </colgroup>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>align-content</td>
-                <td>all 속성은 요소의 속성을 초기화 또는 상속을 설정합니다.</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>align-items</td>
-                <td>all 속성은 요소의 속성을 초기화 또는 상속을 설정합니다.</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>align-items</td>
-                <td>all 속성은 요소의 속성을 초기화 또는 상속을 설정합니다.</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>align-items</td>
-                <td>all 속성은 요소의 속성을 초기화 또는 상속을 설정합니다.</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>align-items</td>
-                <td>all 속성은 요소의 속성을 초기화 또는 상속을 설정합니다.</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>align-items</td>
-                <td>all 속성은 요소의 속성을 초기화 또는 상속을 설정합니다.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>  
+    <li>
+      <Link to={{
+        pathname: "refer-detail",
+        state: {id, title, desc, use, desc2, element, tag, version, view, image, link, Definition, Accessibility, Related, mdn, w3c}
+      }}>
+        <span className='num'>{id}</span>
+        <span className='title'>{title}</span>
+        <span className='desc'>{desc}</span>
+        <span className='use'>{use}</span>
+      </Link>
+    </li>
   )
 }
 
-export default referCont
+ReferCont.propType = {
+  id: propType.number.isRequired,
+  title: propType.string.isRequired,
+  desc: propType.string.isRequired,
+  use: propType.string.isRequired,
+}
+
+export default ReferCont;
