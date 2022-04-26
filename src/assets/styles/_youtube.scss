@@ -16,3 +16,40 @@
         }
     }
 }
+
+.youtube__search {
+    position: relative;
+    h2{
+        color: var(--white);
+        font-size: 40px;
+        font-family: var(--subKor_font);
+        width: 0;
+        height: 0;
+        text-indent: -9999px;
+        
+    }
+    input {
+        border: 1px solid var(--light_border);
+        width: 98%;
+        background: var(--black);
+        border-radius :50px;
+        padding: 1rem;
+        color: var(--light_bg);
+        font-family: var(--subKor_font);
+        margin: 0 1%;
+        margin-bottom: 1%;
+    }
+    button{
+        position: absolute;
+        right: 26px;
+        top: 9px;
+        background: #fff;
+        color: var(--black);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 12px;
+        
+    }
+
+}
