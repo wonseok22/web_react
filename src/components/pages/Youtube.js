@@ -37,8 +37,10 @@ function Youtube() {
         <Header/>
         <Contents>
             <Title title={["youtube","reference"]} />
+            <div className='container'>
             <YoutubeSearch onSearch={search} />
             <YoutubeList videos={videos} />
+            </div>
             <Contact />
         </Contents>
         <Footer />
